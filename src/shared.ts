@@ -230,6 +230,10 @@ api.storage.local.onChanged.addListener(items => {
 
 	api.storage.sync.get(DefaultOptions).then(options => {
 		const config = options as Config;
+		if (config.silenceNotifications) {
+			return;
+		}
+
 		switch (e.type) {
 			case MessageEvent:
 				if (config.showBlockPopups) {

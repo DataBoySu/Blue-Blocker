@@ -90,10 +90,93 @@
 			</label>
 			<span name="suspend-block-collection-status"></span>
 		</div>
+<<<<<<< HEAD
 		<div class="option">
 			<label for="show-block-popups" name="show-block-popups">
 				<div class="checkmark">
 					<div></div>
+=======
+		<input type="checkbox" id="suspend-block-collection" />
+		<input type="checkbox" id="show-block-popups" />
+		<input type="checkbox" id="mute-instead-of-block" />
+		<input type="checkbox" id="block-following" />
+		<input type="checkbox" id="block-followers" />
+		<input type="checkbox" id="skip-verified" />
+		<input type="checkbox" id="skip-checkmark" />
+		<input type="checkbox" id="skip-affiliated" />
+		<input type="checkbox" id="skip-1mplus" />
+		<input type="checkbox" id="block-promoted-tweets" />
+		<input type="checkbox" id="block-for-use" />
+		<input type="checkbox" id="blockstrings" />
+		<input type="checkbox" id="skip-following-qrts">
+		<input type="checkbox" id="silence-notifications" />
+		<div class="tab" id="general">
+			<div class="option">
+				<label for="suspend-block-collection" name="suspend-block-collection">
+					<div class="checkmark">
+						<div></div>
+					</div>
+					<p>pause user collection</p>
+				</label>
+				<span name="suspend-block-collection-status"></span>
+			</div>
+			<div class="option">
+				<label for="show-block-popups" name="show-block-popups">
+					<div class="checkmark">
+						<div></div>
+					</div>
+					<p>show a popup for each blocked user</p>
+				</label>
+				<span name="show-block-popups-status"></span>
+			</div>
+			<div class="option">
+				<label for="mute-instead-of-block" name="mute-instead-of-block">
+					<div class="checkmark">
+						<div></div>
+					</div>
+					<p>mute users instead of blocking them</p>
+				</label>
+				<span name="mute-instead-of-block-status"></span>
+			</div>
+			<div class="option">
+				<label for="block-following" name="block-following">
+					<div class="checkmark">
+						<div></div>
+					</div>
+					<p>block people I follow</p>
+				</label>
+				<span name="block-following-status"></span>
+			</div>
+			<div class="option">
+				<label for="block-followers" name="block-followers">
+					<div class="checkmark">
+						<div></div>
+					</div>
+					<p>block people who follow me</p>
+				</label>
+				<span name="block-followers-status"></span>
+			</div>
+			<div class="option">
+				<label for="skip-following-qrts" name="skip-following-qrts">
+					<div class="checkmark">
+						<div></div>
+					</div>
+					<p>skip blocking retweets from people I follow</p>
+				</label>
+				<span name="skip-following-qrts-status"></span>
+			</div>
+			<div>
+				<div class="option">
+					<p>
+						block interval (<span
+							class="variance"
+							name="variance"
+							title="Blue Blocker varies the interval by this amount so that requests appear less automated"
+							>±</span
+						>)
+					</p>
+					<span name="block-interval-status"></span>
+>>>>>>> 9c72404990b5c98275cf87869996f18634459500
 				</div>
 				<p>show a popup for each blocked user</p>
 			</label>
@@ -232,10 +315,84 @@
 			</label>
 			<span name="skip-affiliated-status"></span>
 		</div>
+<<<<<<< HEAD
 		<div class="option" data-bb-skip-checkmark="">
 			<label for="skip-1mplus" name="skip-1mplus">
 				<div class="checkmark">
 					<div></div>
+=======
+		<div class="tab" id="moderation">
+			<div class="option">
+				<label for="block-promoted-tweets" name="block-promoted-tweets">
+					<div class="checkmark">
+						<div></div>
+					</div>
+					<p>block users that promote tweets</p>
+				</label>
+				<span name="block-promoted-tweets-status"></span>
+			</div>
+			<div class="block-promoted-tweets option" name="block-promoted-tweets-option">
+				<p>
+					∟ this option blocks legacy verified users!
+					<img src="/icon/warn.png" alt="⚠️" class="emoji" />
+				</p>
+			</div>
+			<div class="blockstrings option">
+				<label for="blockstrings" name="blockstrings">
+					<div class="checkmark">
+						<div></div>
+					</div>
+					<p>block users with words in their name</p>
+				</label>
+				<span name="blockstrings-status"></span>
+			</div>
+			<div class="blockstrings-option" name="blockstrings-option">
+				<textarea
+					name="blockstrings-input"
+					placeholder="Comma separated, Emojis allowed."
+					id="blockstrings-input"></textarea>
+				<p>
+					∟ this option blocks unverified users!
+					<img src="/icon/warn.png" alt="⚠️" class="emoji" />
+				</p>
+			</div>
+		</div>
+		<div class="tab" id="appearance">
+			<div class="option">
+				<label for="silence-notifications" name="silence-notifications">
+					<div class="checkmark">
+						<div></div>
+					</div>
+					<p>silence all notifications</p>
+				</label>
+				<span name="silence-notifications-status"></span>
+			</div>
+			<div class="option">
+				<label for="show-block-popups" name="show-block-popups">
+					<div class="checkmark">
+						<div></div>
+					</div>
+					<p>show a popup for each blocked user</p>
+				</label>
+				<span name="show-block-popups-status"></span>
+			</div>
+			<div class="toasts-location option" name="show-block-popups-option">
+				<p>
+					∟ popup location:
+					<select name="toasts-location">
+						<option value="top-right">top right</option>
+						<option value="top-left">top left</option>
+						<option value="bottom-left">bottom left</option>
+						<option value="bottom-right">bottom right</option>
+					</select>
+				</p>
+				<span name="toasts-location-status"></span>
+			</div>
+			<div name="show-block-popups-option">
+				<div class="option">
+					<p>popup timer</p>
+					<span name="popup-timer-status"></span>
+>>>>>>> 9c72404990b5c98275cf87869996f18634459500
 				</div>
 				<p>
 					skip users with over

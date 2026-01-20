@@ -55,7 +55,7 @@ async function sendMessage<T extends MessageResponse>(
 	let attempt: number = 0;
 	let response: MessageResponse | null = null;
 
-	for (; ;) {
+	for (;;) {
 		response = await api.runtime.sendMessage<RuntimeMessage, MessageResponse>(message);
 		if (response.status === SuccessStatus) {
 			return response as T;
@@ -155,10 +155,7 @@ export function MakeToast(
 	if (config.silenceNotifications) {
 		return;
 	}
-<<<<<<< HEAD
-=======
 
->>>>>>> 9c72404990b5c98275cf87869996f18634459500
 	const ele = document.getElementById('injected-blue-block-toasts');
 	if (!ele) {
 		throw new Error('blue blocker was unable to create or find toasts div.');

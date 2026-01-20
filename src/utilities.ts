@@ -155,10 +155,7 @@ export function MakeToast(
 	if (config.silenceNotifications) {
 		return;
 	}
-<<<<<<< HEAD
-=======
 
->>>>>>> 9c72404990b5c98275cf87869996f18634459500
 	const ele = document.getElementById('injected-blue-block-toasts');
 	if (!ele) {
 		throw new Error('blue blocker was unable to create or find toasts div.');

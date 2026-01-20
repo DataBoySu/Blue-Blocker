@@ -297,13 +297,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	const skipCheckmark = document.getElementById('skip-checkmark') as HTMLInputElement;
 	const disallowedWordsCheckmark = document.getElementById('blockstrings') as HTMLInputElement;
 	const disallowedWordsInput = document.getElementById('blockstrings-input') as HTMLInputElement;
-<<<<<<< HEAD
 	const silenceNotifications = document.getElementById('silence-notifications') as HTMLInputElement;
-=======
-	const silenceNotifications = document.getElementById(
-		'silence-notifications',
-	) as HTMLInputElement;
->>>>>>> 9c72404990b5c98275cf87869996f18634459500
 
 	api.storage.sync.get(DefaultOptions).then(_config => {
 		const config = _config as Config;
